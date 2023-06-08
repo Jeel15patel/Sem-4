@@ -21,4 +21,4 @@ while True:
     if not data:
         break
     
-    print("Received",data.decode(),"From","Jeel")
+    print("Received",data.decode(),"From",addr)
