@@ -1,10 +1,10 @@
 import socket as sk
 
-# host = sk.gethostname()
-# port = 9999
+host = sk.gethostname()
+port = 9999
 
-host = "192.168.69.237"
-port = 8080
+# host = "192.168.69.237"
+# port = 8080
 
 udp_client = sk.socket(type=sk.SOCK_DGRAM)
 
