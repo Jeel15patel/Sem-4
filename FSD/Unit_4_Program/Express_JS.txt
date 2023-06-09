@@ -34,4 +34,8 @@ Method :-
 
     2 => app.use(FolderName.ststic)
         :- It open corr.. resource of file and use it
-        
+
+-----------------------------------------------------
+
+Post Method :-
+    Using port you can send larg amount of data
