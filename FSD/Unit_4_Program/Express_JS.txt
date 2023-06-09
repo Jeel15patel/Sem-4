@@ -39,3 +39,7 @@ Method :-
 
 Post Method :-
     Using port you can send larg amount of data
+
+app.use(bodyParser.urlencodeed({extended:false}))
+
+-----------------------------------------------------
