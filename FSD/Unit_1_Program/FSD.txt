@@ -1,0 +1,41 @@
+1-5-23
+:- it is simple to read and wright than xml.
+:- data is in formet of name and value. and name and value ( , ) 
+:- it use { } to hold the object.
+:- array = []
+:- JSON :- Javascript abject Notation
+:- XML :- Extensible markup langg.
+:- json have not tag. 
+:- xml repenstiv tag.
+:- json are string bool num arry and object 
+:- xml is only in string formet 
+:- JSON datatype :- string , number, object , array , bool_num , none , bool.
+:- JSON -:
+
+{
+    "Name" : "Jeel",
+    "Age" : "21",
+    "City" : "Surat"
+}
+
+String :- `{"Name" : "Jeel"}`
+
+num :- {"age" : 20}
+
+array :- 
+{
+    "student" : ["FSD" , "COA" , "TOC"]
+}
+
+bool :- { "SALE" : true }
+null :- { "SALE" : null }
+:- JSON -:
+
+:- Nested Json object -:
+
+
+JSON.PARSE() is use to convert string to json object 
+
+JSON.stringify() Javascript object covter into JSON script
+
+Date object are direcly not allow in json if you need than write is a string 

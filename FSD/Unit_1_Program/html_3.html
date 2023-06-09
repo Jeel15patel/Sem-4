@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Array</title>
+</head>
+<body>
+    <h1> JSON </h1>
+    
+    <script>
+        // var obj = 
+        // {
+        //     "Name" : "Jeel",
+        //     "course" : ["FSD=2","Java","Python","COA"],
+        //     "date" : 2023-04-20,
+        //     "city" : "Surat"
+        // }
+
+        // for (var i=0 ; i<obj.length ; i++)
+        // {
+        //     document.write(obj)
+        // }
+        
+        // obj.course[0] = "FSD-1"
+        // for(var i=0 ; i<obj.course.length ; i++)
+        // {
+        //     document.write("<br>"+obj.course[i])
+        // }
+
+        //------------------------------------------
+
+        const a = {
+            "DS" : [
+                {
+                    "Name" : "Jeel",
+                    "Course" : "INT 1",
+                    "Content" : ["A","B","C"]
+                },
+                {
+                    "Name" : "Patel",
+                    "Course" : "INT 2",
+                    "Content" : ["X","Y","Z"]
+                }
+            ]
+        }
+
+        // console.log(a.DS[0].Content)
+        // console.log(a.DS[0])
+        // console.log(a.DS[1])
+
+        // for(var i=1 ; i < a.DS.length ; i++)
+        // {
+        //     console.log(a.DS)
+        // }
+
+        //------------------------------------------
+
+        var jasonobj = {
+            "FIFA" : [
+                {
+                    "Country" : "India" ,
+                    "Player" : "ABC"
+                },
+                {
+                    "Country" : "Brazil" ,
+                    "Player" : "PQR"
+                },
+                {
+                    "Country" : "Portugal" ,
+                    "Player" : "XYZ"
+                }
+            ]
+        }
+
+        for(var i in jasonobj.FIFA)
+        {
+            for(var j in jasonobj.FIFA[i])
+            {
+                console.log(jasonobj.FIFA[i][j])
+            } 
+        }
+
+        //------------------------------------------
+
+        var IPLVS = {
+            "IPL" : [
+                {
+                    "Team" : "CSK" ,
+                    "Player" : "Dhoni"
+                },
+                {
+                    "Team" : "RCB" ,
+                    "Player" : "Virat"
+                },
+                {
+                    "Team" : "GT" ,
+                    "Player" : "Hardik"
+                }
+            ]
+        }
+
+        for(var i in IPLVS.IPL)
+        {
+            for(var j in IPLVS.IPL[i])
+            {
+                console.log(IPLVS.IPL[i][j])
+            } 
+        }
+
+    </script>
+</body>
+</html>

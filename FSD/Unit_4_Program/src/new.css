@@ -1,0 +1,10 @@
+.Table{
+    background-color: aqua;
+    font-size: xx-large;     
+}
+
+.Table .Heading{
+    background-color: blue;
+    font-style: italic;
+    font-size: xx-large;
+}

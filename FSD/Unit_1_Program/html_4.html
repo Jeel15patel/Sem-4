@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JSON.PARSE() is use to convert string to json object
+        // JSON.stringify() Javascript object covter into JSON script+
+
+        // var x = 
+        // `{
+        //     "Name" : "Jeel",
+        //     "Age" : 20
+        // }`
+
+        // var c1 = JSON.parse(x)
+
+        // var Name = c1.Name;
+        // var Age = c1.Age;
+
+        // console.log(Name)
+
+        // --------------------------------------------------------------------
+        
+        var obj = `{
+            "Name" : "Jeel",
+            "Date" : "03/05/2023"
+        }`
+        var data = JSON.parse(obj);
+        console.log(data);
+
+        // --------------------------------------------------------------------
+
+        var obj = {
+            name : "JEEL",
+            birth : "03/05/2023"
+        }
+        var data = JSON.stringify(obj);
+        console.log(data)
+
+        // -------------------------------------------------------------------
+
+
+    </script>
+</body>
+</html>

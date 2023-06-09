@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Form_Tag
+    </title>
+</head>
+
+<body>
+    <center>
+        <h1> LOGIN </h1>
+    </center>
+    <center>
+        <form action="img_1.png" method="">
+            <fieldset>
+
+                <legend align="left">Your Details</legend>
+
+                <label><b> Username:- </b></label><input type="text" placeholder="Enter Your Name">
+                <br> <br>
+
+                <label><b> Password:- </b></label><input type="text" placeholder="Enter Your Password">
+                <br> <br>
+
+                <label><b> Email:- </b></label><input type="email" placeholder=" Enter Your Email">
+                <br> <br>
+
+                <label><b> Number </b></label><input type="number" id="Phonr" pattern="0-9"
+                    placeholder=" Enter Your Number">
+                <br> <br>
+
+                <label><b> Gender:- </b></label>
+                <label> <input type="radio" name="Gender"> Male </label>
+                <label> <input type="radio" name="Gender"> Female </label>
+                <br> <br>
+
+
+                <label><b> Hobbies </b></label>
+                <br>
+                <label> <input type="checkbox" name="Hobise"> Vollyball </label>
+                <br>
+                <label> <input type="checkbox" name="Hobise"> Cricket </label>
+                <br>
+                <label> <input type="checkbox" name="Hobise"> Football </label>
+                <br>
+                <label> <input type="checkbox" name="Hobise"> Other </label>
+                <br> <br>
+
+                <label><b> Upload CV Here :- </b></label><input type="file" name="Upload CV">
+                <br> <br>
+
+                <label><b> Joining Date :- </b></label><input type="date" name="Joining Date">
+                <br> <br>
+
+                <label><b> Age :- </b><input type="range" name="Age"> </label>
+                <br> <br>
+
+                <label>
+                    <b> Department:- </b>
+                    <select>
+                        <optgroup label="Branch D2D">
+                            <option value="" hidden> --Select-- </option>
+                            <option> CSE </option>
+                            <option> AIDS </option>
+                            <option> CE </option>
+                            <option> AIML </option>
+                        </optgroup>
+                    </select>
+                </label>
+                <br> <br>
+
+                <label><b> Address :- </b></label><textarea name="" cols="50" rows="5"></textarea>
+                <br> <br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Animation Css
+            <!-- Animation , Animation-Duration , Animation-delaye , Animation-name
+                Animation-iteration-count , Animation-Direction 
+                Normal , reverse , alternate , alternate-reverse -->
+        </title>
+        <link rel="stylesheet" href="P7.css">
+        <style>
+            #div1 {
+                width: 200px;
+                height: 200px;
+                border: 5px solid black;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+
+            @keyframes example {
+                0% {
+                    background-color: red;
+                    margin: 0px;
+                }
+
+                25% {
+                    background-color: aqua;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    margin-left: 400px;
+                }
+
+                50% {
+                    background-color: darkblue;
+                    margin-top: 400px;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    margin-left: 400px;
+                }
+
+                75% {
+                    background-color: yellow;
+                    margin-top: 400px;
+                    margin-bottom: 0px;
+                    margin-right: 400px;
+                    margin-left: 0px;
+                }
+
+                100% {
+                    background-color: orange;
+                    margin-top: 0px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <h1>
+                Hello
+            </h1>
+        </div>
+    </body>
+</html>

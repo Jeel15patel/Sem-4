@@ -1,0 +1,37 @@
+Epress is node js framework it like addstion module of node js.
+
+Feature of Exp :- 
+    Build Dynamic web
+    Creat FSD 
+
+Exp js is faster than node js
+
+1 : app.listen(port,callback) 
+2 : app.get("Pro_Name",Callback)
+
+
+
+
+
+----------------------------------------------------
+app.listen(9999,() => {
+    console.log("Server is running on port 9999")
+})
+
+app.get("User_id",(req,res)=> {
+    res.send("User_id")
+})
+-----------------------------------------------------
+
+How to link HTML CSS JS
+
+----------------------------------------------------
+
+Method :- 
+    1 => Express.static(folderName)
+        :- To static file such as image , css , html 
+        :- This work in Build-In function
+
+    2 => app.use(FolderName.ststic)
+        :- It open corr.. resource of file and use it
+        

@@ -1,0 +1,25 @@
+nodejs is a serevr side platform build in google chrome verson 8.
+nodejs writen in JS.
+it a open source cross platform runtime enviroment for devloping serever side and network App.
+
+NODEJS = Runtime Evn + JS Lib.
+
+set Interval()
+set Timeout()
+
+// Node Js core Modules
+HTTP modules include class, method and event to creat HTTP event.
+FS this include class , method and event to creat node Js
+url method 
+part modules include deal with file part
+qure string that include method to deal with quresy string
+UT :- UT modules utility functio
+
+OS Module.
+
+Path module 
+
+creatServer
+http request :- how request obj.. can be use to get info about current http request like url reques hearddr and data
+
+writeHead brow can not stop. it show countis moves

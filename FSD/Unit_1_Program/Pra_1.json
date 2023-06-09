@@ -1,0 +1,14 @@
+{
+    "FSD" : 
+    [
+        {
+            "Name" : "JSON",
+            "Course" : "Intro",
+            "Content" : ["file","xyz"]
+        },
+        {
+            "Name" : "NodeJs",
+            "Course" : "Intro"
+        }
+    ]
+}
