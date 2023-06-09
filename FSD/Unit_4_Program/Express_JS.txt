@@ -9,10 +9,6 @@ Exp js is faster than node js
 1 : app.listen(port,callback) 
 2 : app.get("Pro_Name",Callback)
 
-
-
-
-
 ----------------------------------------------------
 app.listen(9999,() => {
     console.log("Server is running on port 9999")
@@ -43,3 +39,9 @@ Post Method :-
 app.use(bodyParser.urlencodeed({extended:false}))
 
 -----------------------------------------------------
+
+WAP JSSC 
+    1 :- Creat HTML file LJform.html
+        :- Username , Password , Button , Data Send by POST 
+            :- Button Black Color , White Text
+    2 :- ON the home form shoud be display and whiile submit the form on next page login page if username is ADMINE then print WellCome admine 
