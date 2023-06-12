@@ -45,3 +45,17 @@ WAP JSSC
         :- Username , Password , Button , Data Send by POST 
             :- Button Black Color , White Text
     2 :- ON the home form shoud be display and whiile submit the form on next page login page if username is ADMINE then print WellCome admine 
+
+-----------------------------------------------------
+
+What is Middleware?
+> Express JS is a routing and middleware framework for handling the different routing in webpage
+  and it works between response and request cycle.
+> It is executed after the server recieves the request and before the controller action sends the
+  response.
+> It has access to the request object, response object and next.
+> It can process the request before the server sends the response.
+> It can process request object multiple times before the server works for that request.
+> It can be used to add login and authentication funcionality.
+> It improves Client-side rendering performance, it hepls for optimizaiton and better performance.
+> 
