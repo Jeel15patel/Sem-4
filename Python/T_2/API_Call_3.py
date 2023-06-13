@@ -1,8 +1,7 @@
 # write a code for Call 5 day / 3 hour forecast data in python get date in table form 
 # date-time , temp , pressure , humidity , weather , wind speed 
 
-import requests
-import json
+import requests , json
 import pandas as pd
 
 def get_forecast_data():
