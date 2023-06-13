@@ -37,3 +37,5 @@ Server Process --> Socket() --> Bind() --> Listen() --> Accept() --> Read() --> 
 Client Process --> Socket() --> Connect() --> Write() --> Read() --> Close()
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Web Scrapping 
