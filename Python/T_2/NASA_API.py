@@ -1,3 +1,5 @@
+# If you give Proper Date it show Image and Description take by NASA
+
 import requests
 import urllib.request
 from PIL import Image
@@ -20,4 +22,4 @@ def getPictureOfTheDay(apiKey):
     img.show()
 
 
-getPictureOfTheDay(" Enter Your API ")
+getPictureOfTheDay("Enter Your API")

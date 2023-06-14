@@ -9,7 +9,5 @@ soup = BeautifulSoup(content, "html.parser")
 # print(soup)
 print(soup.prettify())
 
-
-
 movie = soup.find("article",class_="main-article")
 print(movie)
