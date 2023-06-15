@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-website = "https://subslikescript.com/movie/Titanic-120338"
+website = "https://subslikescript.com/movie/Avengers_Endgame-4154796"
 
 result = requests.get(website)
 content = result.text
@@ -14,4 +14,10 @@ soup = BeautifulSoup(content, "html.parser")
 
 # print(soup.find_all("a"))
 
-print(soup.find_all("div"))
+# print(soup.find_all("div"))
+
+transcript = soup.find("div",class_="full-script").text.strip()
+print(transcript)
+
+with open("Endgames.txt","w") as file:
+    file.write(transcript)
