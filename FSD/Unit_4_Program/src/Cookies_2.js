@@ -2,7 +2,7 @@
 // it should jump to the next page and value of username should be stored in cookie.
 // Perform task using http get method, observer and check cookie inside the browser.
 
-const express = require("express");
+const express = require("Express");
 const cookieParser = require("cookie-parser");
 const app = express();
 
