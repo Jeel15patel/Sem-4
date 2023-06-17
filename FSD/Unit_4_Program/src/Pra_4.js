@@ -21,7 +21,7 @@ app.post("/submit-feedback", (req, res) => {
   const { name, email, message, rating } = req.body;
   res.cookie("feedback", { name, email, message, rating }, { maxAge: 10000 });
   res.send(
-    'Thank you for your feedback! <a href="/feedback-details">Click here</a> to view your feedback details.'
+    'Thank you for your feedback! <a href="/feedback-details"><button>View Your FeedBack</button></a> to view your feedback details.'
   );
 });
 
@@ -35,7 +35,7 @@ app.get("/feedback-details", (req, res) => {
       <p><strong>Email:</strong> ${feedback.email}</p>
       <p><strong>Message:</strong> ${feedback.message}</p>
       <p><strong>Rating:</strong> ${feedback.rating}</p>
-      <p><a href="/logout">Logout</a></p>
+      <p><a href="/logout"><button>Log Out</button></a></p>
     `);
   } else {
     res.send("No feedback found.");
