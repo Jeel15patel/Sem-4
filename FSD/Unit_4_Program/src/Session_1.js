@@ -7,6 +7,7 @@ app.use(sess({
     saveUninitialized: false,  //Dont Create session if something is not stored
     secret:"key"               //If the Secret key is changed, the session is considered as fresh session and its value will be reset
 }))
+
 app.get('/', (req, res) => {
     if (req.session.count) {
         req.session.count++;
