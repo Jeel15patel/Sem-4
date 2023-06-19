@@ -1,52 +1,17 @@
-Epress is node js framework it like addstion module of node js.
+>>Chapter-4
 
-Feature of Exp :- 
-    Build Dynamic web
-    Creat FSD 
-
-Exp js is faster than node js
-
-1 : app.listen(port,callback) 
-2 : app.get("Pro_Name",Callback)
-
-----------------------------------------------------
-app.listen(9999,() => {
-    console.log("Server is running on port 9999")
-})
-
-app.get("User_id",(req,res)=> {
-    res.send("User_id")
-})
------------------------------------------------------
-
-How to link HTML CSS JS
-
-----------------------------------------------------
-
-Method :- 
-    1 => Express.static(folderName)
-        :- To static file such as image , css , html 
-        :- This work in Build-In function
-
-    2 => app.use(FolderName.ststic)
-        :- It open corr.. resource of file and use it
-
------------------------------------------------------
-
-Post Method :-
-    Using port you can send larg amount of data
-
-app.use(bodyParser.urlencodeed({extended:false}))
-
------------------------------------------------------
-
-WAP JSSC 
-    1 :- Creat HTML file LJform.html
-        :- Username , Password , Button , Data Send by POST 
-            :- Button Black Color , White Text
-    2 :- ON the home form shoud be display and whiile submit the form on next page login page if username is ADMINE then print WellCome admine 
-
------------------------------------------------------
+It is like an additional module of Node JS.
+Features Of Express JS:
+- Building a Dynamic Website.
+- Creating Full Stack Web-App.
+- Express JS is more Faster than Node JS and less Complexity.
+> To open static files i.e images, css, html express.static(foldername) is used.
+  This work as bulit-in middleware funcion.
+> app.use(express.static(foldername)) : this function opens the correspnding resources
+  and use it
+> Post Method: app.use(bodyParser.urlencoded({extended:false}))
+> if extended is True you get depricated data and if False you get
+  in form of js library query string.
 
 What is Middleware?
 > Express JS is a routing and middleware framework for handling the different routing in webpage
@@ -59,16 +24,12 @@ What is Middleware?
 > It can be used to add login and authentication funcionality.
 > It improves Client-side rendering performance, it hepls for optimizaiton and better performance.
 
------------------------------------------------------
-
 Cookies:-
 > const cp = require('cookie-parser') -> Module for cookie.
 > res.cookie("name","value","expiry") -> Creates a cookie.{e: new Date(Date.now+10000)}
 > req.cookie -> To send and fetch a cookie, if you want a specific cookie, then we can retrive it
                 by appending the name of cookie.
 > res.clearCookie("cookie-name") -> Deletes a cookie.
-
------------------------------------------------------
 
 Session in JS:-
 > Since http is a stateless protocol, to assosciate a request to any other request, you need
@@ -83,6 +44,16 @@ session({
   secret:"key"              #If the Secret key is changed, the session is considered as fresh session and its value will be reset
 })
 
------------------------------------------------------
 
-UNIT 5 :-  
+>>Chapter-5
+
+Multer:-
+> Multer accepts an option Object, the most basic of which is the storage property which tells Multer
+  where to upload the files.
+> In case you emmit the option object, the files will be kept in memory and never return to the
+  list.
+> Storage -> Where to store a file.
+> File filter -> funcion to control which files are accepted. 
+> limits -> Limits of uploaded data.
+> Preserve Path -> Keep the full file path of the files instead of just basename.
+> fieldname='single' -> This accepts a single file with the name field name
