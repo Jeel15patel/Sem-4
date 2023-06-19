@@ -57,3 +57,11 @@ Multer:-
 > limits -> Limits of uploaded data.
 > Preserve Path -> Keep the full file path of the files instead of just basename.
 > fieldname='single' -> This accepts a single file with the name field name
+
+PUG:- 
+> It is JS that was know sa JADE
+> It is easy to code templet engine use to code html in more readable fashion 
+> PUG is sensitive in white space.
+  > Buffered Data = //
+  > unbuffered Data = //-
+  > Multiline  
