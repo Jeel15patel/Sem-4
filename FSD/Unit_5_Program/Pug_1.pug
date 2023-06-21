@@ -56,4 +56,14 @@ html(lang="en")
                 td Harsh
                 td 80
 
-        
+        br
+        br
+
+        form(action="/about", method="get")
+            label(for="username") Username 
+            input(type="text", name="username") 
+            br
+            label(for="password") Password 
+            input(type="text", name="password")
+            br  
+            input(type="submit", value="Submit") 
