@@ -7,7 +7,7 @@ var trans = nm.createTransport({
   secure: true,
   auth: {
     user: "ABX@gmail.com",
-    pass: "Enter Your OWN Password",
+    pass: "Enter Your Password :-",
   },
 });
 
@@ -17,11 +17,11 @@ var mailOption = {
   subject: "Test",
   attachments: [
     {
-      filename: "images.jpg",
-      path: "D:\\Github\\Sem-4\\FSD\\Unit_5_Program\\Mail_Attach_Ment\\IMG_1.jpeg",
+      filename: "File Name with extension",
+      path: "Attachments Path",
     },
   ],
-  text: "hii...",
+  text: "Enter Your Message",
 };
 
 trans.sendMail(mailOption, (err, info) => {
