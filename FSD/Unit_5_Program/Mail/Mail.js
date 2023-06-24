@@ -6,14 +6,14 @@ var trans = nm.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "15jeel6201patel@gmail.com",
+    user: "ABX@gmail.com",
     pass: "Enter Your OWN Password",
   },
 });
 
 var mailOption = {
-  from: "15jeel6201patel@gmail.com",
-  to: "harshrathod2052@gmail.com",
+  from: "ABC@gmail.com",
+  to: "XZY@gmail.com",
   subject: "Test",
   attachments: [
     {
