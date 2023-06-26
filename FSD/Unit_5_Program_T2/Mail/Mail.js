@@ -6,22 +6,22 @@ var trans = nm.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "15jeel6201patel@gmail.com",
-    pass: "Enter Your OWN Password",
+    user: "ABX@gmail.com",
+    pass: "Enter Your Password :-",
   },
 });
 
 var mailOption = {
-  from: "15jeel6201patel@gmail.com",
-  to: "harshrathod2052@gmail.com",
+  from: "ABC@gmail.com",
+  to: "XZY@gmail.com",
   subject: "Test",
   attachments: [
     {
-      filename: "images.jpg",
-      path: "D:\\Github\\Sem-4\\FSD\\Unit_5_Program\\Mail_Attach_Ment\\IMG_1.jpeg",
+      filename: "File Name with extension",
+      path: "Attachments Path",
     },
   ],
-  text: "hii...",
+  text: "Enter Your Message",
 };
 
 trans.sendMail(mailOption, (err, info) => {
