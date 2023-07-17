@@ -15,3 +15,10 @@ code {
 table, th, td {
   border: 1px solid aqua;
 }
+
+ul, li {
+  font-size: xx-large;
+  list-style-type: decimal;
+  margin: 2;
+  padding: 3;
+}

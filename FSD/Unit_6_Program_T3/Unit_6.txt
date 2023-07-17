@@ -1,1 +1,4 @@
 React Js is a framework which is open source framework and librery devlop by facebook 
+
+.JSX is extanstio for JS that let you write HTML markerup inside JS
+JSX look like html but it beat string it and can displat dynamic info 

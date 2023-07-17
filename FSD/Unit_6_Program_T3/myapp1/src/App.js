@@ -6,8 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        {/* --------------------- */}
         <h1>Hello This is My First React App</h1>
-        <br></br>
+        {/* --------------------- */}
         <table>
           <tr>
             <th>Lectern No.</th>
@@ -20,6 +21,14 @@ function App() {
             <td>Install React</td>
           </tr>
         </table>
+        {/* --------------------- */}
+        <ul>
+          <li>ABC</li>
+          <li>DEF</li>
+          <li>GHI</li>
+        </ul>
+        {/* ------------------ */}
+        <img src="logo192.png" alt="Logo"></img>
       </header>
     </div>
   );
