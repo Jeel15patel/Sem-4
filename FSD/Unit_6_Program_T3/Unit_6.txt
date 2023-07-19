@@ -2,3 +2,9 @@ React Js is a framework which is open source framework and librery devlop by fac
 
 .JSX is extanstio for JS that let you write HTML markerup inside JS
 JSX look like html but it beat string it and can displat dynamic info 
+JSX is not a neccesary to write react but it make your code simple and elegant
+
+props :-
+    props is a object that contain all the attributes pass to a component 
+    props are user to tranfer data from one component to another component
+    props pass as object

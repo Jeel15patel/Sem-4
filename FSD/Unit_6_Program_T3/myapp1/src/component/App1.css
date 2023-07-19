@@ -1,0 +1,14 @@
+/* Path: myapp2\src\component\App2.css */
+
+#div1 {
+  height: 650px;
+  width: 900px;
+  background-color: lightblue;
+}
+
+table,
+th,
+td {
+  border: 2px dotted red;
+  padding: 5px;
+}
