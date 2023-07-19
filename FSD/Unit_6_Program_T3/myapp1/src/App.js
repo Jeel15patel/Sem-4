@@ -1,6 +1,7 @@
 import React from "react";
 import App1 from "./component/App1";
 import App2 from "./component/App2";
+import Pra1 from "./component/Pra1";
 import "./App.css";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           <tr>
             <td>Lec 2</td>
             <td>19-07-23</td>
-            <td>App1/App2/</td>
+            <td>App1/App2/Pra1</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -41,9 +42,12 @@ function App() {
         {/* --------------------- */}
         <App2 name="Jeel" age="20" marks="19"/>
         <App2 name="Dwij" age="21" marks="23"/>
+        {/* --------------------- */}
+        <div>
+          <Pra1 />
+        </div>
       </header>
     </div>
   );
 }
-
 export default App;
