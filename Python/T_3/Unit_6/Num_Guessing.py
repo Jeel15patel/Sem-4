@@ -8,8 +8,12 @@ def num_guess_gane():
     attame = 0
     print("I'm thinking of a number between 1 and 100; what do you think it is?")
     while True:
+        if attame == 7:
+            break
+
         guess = int(input("Enter your guess: "))
         attame += 1
+
         if guess == num:
             print(f"You got it! It took you {attame} attempts.")
             break
