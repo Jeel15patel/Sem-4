@@ -1,0 +1,18 @@
+import SimpleGUICS2Pygame as simp
+
+
+Program Str. 
+    global()
+    Helper Function 
+    Classes 
+    Define event handlers
+    creat a frame
+    register event handlers
+    start frame & timers
+
+Timer :- 
+    creat timers
+    start timers
+    stop timers
+    timer is running or not
+    timer = simplegui.create_timer(interval, handler)
