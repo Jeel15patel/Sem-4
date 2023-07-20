@@ -1,80 +1,70 @@
-# Rock,Paper,Scissors,Lizard,Spock Games
+# Make Lizard, Spoke, Stone, Paper, Scissors game, assign 0 to rock, 1 to spock, 2 to paper, 3 to lizard, 4 to scissors with difference logic as below:
+# if difference is 1 or 2 then user wins, if difference is 3 or 4 then computer wins, if difference is 0 then draw
 
 import random
 
-def get_user_choice():
-    while True:
-        user_choice = (
-            input(
-                "Enter R for Rock, P for Paper, S for Scissors, L for Lizard, V for Spock: "
-            )
-            .strip()
-            .upper()
-        )
-        if user_choice in ("R", "P", "S", "L", "V"):
-            return user_choice
-        print("Invalid choice. Please try again.")
 
-
-def get_computer_choice():
-    choices = ["R", "P", "S", "L", "V"]
-    return random.choice(choices)
-
-
-def get_rock_paper_scissors_result(computer_choice, user_choice):
-    choices = ["R", "P", "S", "L", "V"]
-    difference = (choices.index(computer_choice) - choices.index(user_choice)) % 5
-
-    if difference == 1 or difference == 2:
-        return "Computer"
-    elif difference == 3 or difference == 4:
-        return "User"
+def name_to_number(name):
+    if name == "rock":
+        return 0
+    elif name == "spock":
+        return 1
+    elif name == "paper":
+        return 2
+    elif name == "lizard":
+        return 3
+    elif name == "scissors":
+        return 4
     else:
-        return "Tie"
+        return "Invalid Name"
 
 
-def play_again():
-    return (
-        input("Do you want to play again? (Y for yes, N for no): ").strip().upper()
-        == "Y"
-    )
+def number_to_name(number):
+    if number == 0:
+        return "rock"
+    elif number == 1:
+        return "spock"
+    elif number == 2:
+        return "paper"
+    elif number == 3:
+        return "lizard"
+    elif number == 4:
+        return "scissors"
+    else:
+        return "Invalid Number"
 
 
-def play_rock_paper_scissors(rounds=3):
-    user_wins = 0
-    computer_wins = 0
-    ties_wins = 0
-
-    for round_games in range(1, rounds + 1):
-        print(f"\nRound {round_games}:")
-        user_choice = get_user_choice()
-        computer_choice = get_computer_choice()
-        result = get_rock_paper_scissors_result(computer_choice, user_choice)
-
-        if result == "User":
-            user_wins += 1
-            print("You win!")
-        elif result == "Computer":
-            computer_wins += 1
+def rpsls(rounds):
+    rounds = rounds
+    player_score = 0
+    comp_score = 0
+    for i in range(rounds):
+        print("Round", i + 1)
+        player_choice = input(
+            "Enter your choice from rock, spock, paper, lizard or scissors:- "
+        )
+        print("Player chooses :-", player_choice)
+        player_number = name_to_number(player_choice)
+        comp_number = random.randrange(5)
+        comp_choice = number_to_name(comp_number)
+        print("Computer chooses :-", comp_choice)
+        difference = (player_number - comp_number) % 5
+        if difference == 1 or difference == 2:
+            player_score += 1
+            print("Player wins!")
+        elif difference == 3 or difference == 4:
+            comp_score += 1
             print("Computer wins!")
         else:
-            ties_wins += 1
-            print("Tie!")
-
-    print(f"Score - You: {user_wins}, Computer: {computer_wins}, Ties: {ties_wins}")
-    
-    if user_wins > computer_wins:
-        print("Congratulations! You are the overall winner!")
-    elif user_wins < computer_wins:
-        print("Computer is the overall winner!")
+            print("Player and computer tie!")
+        print()
+    if player_score > comp_score:
+        print("Player wins with score of", player_score, "points")
+    elif player_score < comp_score:
+        print("Computer wins with score of", comp_score, "points")
     else:
-        print("It's a tie!")
-
-    if play_again():
-        play_rock_paper_scissors()
-    else:
-        print("Thanks for playing!")
+        print("Player and computer tie!")
+        rpsls(1)
 
 
-
-play_rock_paper_scissors()
+rpsls(3)
