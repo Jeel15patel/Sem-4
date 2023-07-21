@@ -8,7 +8,7 @@ function Events() {
 
   function handlechange() {
     alert("Hello");
-    // document.body.style.backgroundColor = "red"
+    document.body.style.backgroundColor = "red"
   }
   return (
     <>

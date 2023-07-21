@@ -8,3 +8,6 @@ props :-
     props is a object that contain all the attributes pass to a component 
     props are user to tranfer data from one component to another component
     props pass as object
+
+Maps :- 
+    In React Map method is use to 

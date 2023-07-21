@@ -1,9 +1,12 @@
-import "./App.css";
+// import "./App.css";
 import React from "react";
 import App1 from "./component/App1";
 import App2 from "./component/App2";
 import Event from "./component/Events";
 import Event1 from "./component/Events1";
+import Map1 from "./component/Map1";
+import Map2 from "./component/Map2";
+import Pra2 from "./component/Pra2";
 // import Pra1 from "./component/Pra1";
 
 function App() {
@@ -31,7 +34,7 @@ function App() {
           <tr>
             <td>Lec 3</td>
             <td>21-07-23</td>
-            <td>---</td>
+            <td>Event,Map,Pra2</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -62,6 +65,17 @@ function App() {
           <Event1 />
         </div>
         {/* --------------------- */}
+        <div>
+          <Map1 />
+        </div>
+        {/* --------------------- */}
+        <div>
+          <Pra2 />
+        </div>
+        {/* --------------------- */}
+        <div>
+          <Map2 />
+        </div>
       </header>
     </div>
   );
