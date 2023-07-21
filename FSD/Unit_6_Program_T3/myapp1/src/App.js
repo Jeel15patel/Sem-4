@@ -26,6 +26,11 @@ function App() {
             <td>19-07-23</td>
             <td>App1/App2/Pra1</td>
           </tr>
+          <tr>
+            <td>Lec 3</td>
+            <td>21-07-23</td>
+            <td>---</td>
+          </tr>
         </table>
         {/* --------------------- */}
         <ul>
@@ -40,12 +45,13 @@ function App() {
           <App1 />
         </div>
         {/* --------------------- */}
-        <App2 name="Jeel" age="20" marks="19"/>
-        <App2 name="Dwij" age="21" marks="23"/>
+        <App2 name="Jeel" age="20" marks="19" />
+        <App2 name="Dwij" age="21" marks="23" />
         {/* --------------------- */}
-        <div>
+        {/* <div>
           <Pra1 />
-        </div>
+        </div> */}
+        {/* --------------------- */}
       </header>
     </div>
   );
