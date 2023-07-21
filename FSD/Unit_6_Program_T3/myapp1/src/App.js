@@ -1,8 +1,10 @@
+import "./App.css";
 import React from "react";
 import App1 from "./component/App1";
 import App2 from "./component/App2";
-import Pra1 from "./component/Pra1";
-import "./App.css";
+import Event from "./component/Events";
+import Event1 from "./component/Events1";
+// import Pra1 from "./component/Pra1";
 
 function App() {
   return (
@@ -51,6 +53,14 @@ function App() {
         {/* <div>
           <Pra1 />
         </div> */}
+        {/* --------------------- */}
+        <div>
+          <Event />
+        </div>
+        {/* --------------------- */}
+        <div>
+          <Event1 />
+        </div>
         {/* --------------------- */}
       </header>
     </div>
