@@ -11,7 +11,7 @@ import SimpleGUICS2Pygame.simpleguics2pygame as simple
 
 
 # ---------------------------------------------
-# Print onle 5 Times 
+# Print only 5 Times 
 
 # t = 0
 # def timer_handler():
@@ -26,14 +26,20 @@ import SimpleGUICS2Pygame.simpleguics2pygame as simple
 
 # ---------------------------------------------
 
-def timer_handler():
-    pass
+# def timer_handler():
+#     pass
 
-timers = simple.create_timer(500, timer_handler)
-print(timers.is_running())
+# timers = simple.create_timer(500, timer_handler)
+# print(timers.is_running())
 
-timers.start()
-print(timers.is_running())
+# timers.start()
+# print(timers.is_running())
 
-timers.stop()
-print(timers.is_running())
+# timers.stop()
+# print(timers.is_running())
+
+# ---------------------------------------------
+# Frame 
+
+frames = simple.create_frame("My Frame", 200, 200,100)
+frames.start()  
