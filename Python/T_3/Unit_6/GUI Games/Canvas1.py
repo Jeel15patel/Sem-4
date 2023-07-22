@@ -10,6 +10,7 @@ canvas.draw_line :- It use for draw line.
 canvas.draw_polyline :- It use for draw line with multiple points.
 canvas.draw_polygon :- It use for draw polygon with multiple points. ( It connect the last point to first point)
 canvas.draw_circle :- It use for draw circle with center point and radius.
+frame.add_label :- It use for add lable in frame.
 """
 # --------------------------------------------------------
 
