@@ -75,7 +75,7 @@ frame.add_label :- It use for add lable in frame.
 
 # def draw_handler(canvas):
 #     canvas.draw_circle((100, 100), 50, 2, "Red", "yellow")
-#     canvas.draw_circle((250, 250), 200, 5, "Red", "yellow")  
+#     canvas.draw_circle((250, 250), 200, 5, "Red", "yellow")
 
 
 # frame = simple.create_frame("Circle Frame", 500, 500, 200)
@@ -92,3 +92,28 @@ frame.add_label :- It use for add lable in frame.
 
 # --------------------------------------------------------
 
+
+def draw_handler(canvas):
+    pass
+
+
+def button_handler1():
+    frame.set_canvas_background("Red")
+
+
+def button_handler2():
+    frame.set_canvas_background("Green")
+
+
+def button_handler3():
+    frame.set_canvas_background("Blue")
+
+
+frame = simple.create_frame("Button Frame", 500, 500, 200)
+button1 = frame.add_button("Red", button_handler1)
+button2 = frame.add_button("Green", button_handler2, 50)
+button3 = frame.add_button("Blue", button_handler3, 100)
+frame.set_draw_handler(draw_handler)
+frame.start()
+
+# --------------------------------------------------------
