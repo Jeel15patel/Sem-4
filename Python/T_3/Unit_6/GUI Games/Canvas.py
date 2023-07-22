@@ -93,27 +93,48 @@ frame.add_label :- It use for add lable in frame.
 # --------------------------------------------------------
 
 
-def draw_handler(canvas):
-    pass
+# def draw_handler(canvas):
+#     pass
 
 
-def button_handler1():
-    frame.set_canvas_background("Red")
+# def button_handler1():
+#     frame.set_canvas_background("Red")
 
 
-def button_handler2():
-    frame.set_canvas_background("Green")
+# def button_handler2():
+#     frame.set_canvas_background("Green")
 
 
-def button_handler3():
-    frame.set_canvas_background("Blue")
+# def button_handler3():
+#     frame.set_canvas_background("Blue")
 
 
-frame = simple.create_frame("Button Frame", 500, 500, 200)
-button1 = frame.add_button("Red", button_handler1)
-button2 = frame.add_button("Green", button_handler2, 50)
-button3 = frame.add_button("Blue", button_handler3, 100)
-frame.set_draw_handler(draw_handler)
-frame.start()
+# frame = simple.create_frame("Button Frame", 500, 500, 200)
+# button1 = frame.add_button("Red", button_handler1)
+# button2 = frame.add_button("Green", button_handler2, 50)
+# button3 = frame.add_button("Blue", button_handler3, 100)
+# frame.set_draw_handler(draw_handler)
+# frame.start()
 
 # --------------------------------------------------------
+
+
+def timer_handler():
+    print("Demo timer handler")
+
+
+def start():
+    frame.add_label("Start Times")
+    timers.start()
+
+
+def stop():
+    frame.add_label("Stop Times")
+    timers.stop()
+
+
+timers = simple.create_timer(1000, timer_handler)
+frame = simple.create_frame("Demo Frame", 500, 500, 200)
+button1 = frame.add_button("Start", start, 100)
+button2 = frame.add_button("Stop", stop, 100)
+frame.start()
