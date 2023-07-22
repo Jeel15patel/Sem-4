@@ -1,21 +1,20 @@
-Lect 1 :- 22/7/2023 :-
+Lect 1 :- 18/7/2023 :-
     :- Introduction to Random Module
     :- Rock, Paper, Scissors Game
+    :- Lizard, Spoke, Stone, Paper, Scissors game
     :- Pra 1
 
-Lect 2 :- 22/7/2023 :-
-    :- Lizard, Spoke, Stone, Paper, Scissors game
+Lect 2 :- 20/7/2023 :-
     :- Number Guessing Game
+    :- Mystical Octosphere Games
+    :- Introduction to SimpleGUI
     :- Pra 2
 
 Lect 3 :- 22/7/2023 :-
-    :- Mystical Octosphere Games
-    :- Introduction to SimpleGUI
-    
-Lect 4 :- 22/7/2023 :- 
     :- Timer
     :- Frame
     :- Canvas
+    
 
 -----------------------------------------------------
 
