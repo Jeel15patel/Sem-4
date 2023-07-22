@@ -1,18 +1,34 @@
+Lect 1 :- 22/7/2023 :-
+    :- Introduction to Random Module
+    :- Rock, Paper, Scissors Game
+
+Lect 2 :- 22/7/2023 :-
+    :- Lizard, Spoke, Stone, Paper, Scissors game
+    :- 
+
+Lect 3 :- 22/7/2023 :-
+Lect 4 :- 22/7/2023 :- 
+    :- Timer
+    :- SimpleGUI
+    :- SimpleGUICS2Pygame
+
+-----------------------------------------------------
+
 import SimpleGUICS2Pygame as simp
+import SimpleGUICS2Pygame.simpleguics2pygame as simple
 
+Program Structure :- 
+    :- global(state)
+    :- Helper Function
+    :- Classes
+    :- Define event handler
+    :- create a frame
+    :- register event handler
+    :- start frame and timers
 
-Program Str. 
-    global()
-    Helper Function 
-    Classes 
-    Define event handlers
-    creat a frame
-    register event handlers
-    start frame & timers
-
-Timer :- 
-    creat timers
-    start timers
-    stop timers
-    timer is running or not
-    timer = simplegui.create_timer(interval, handler)
+Timer :-
+    :- create a timer
+    :- start timer
+    :- stop timer
+    :- timer is running or not
+    :- timer=simp.create_timer(interval,handler), here internal is in milliseconds and handler is a function
