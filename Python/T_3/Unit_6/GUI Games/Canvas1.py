@@ -61,7 +61,7 @@ canvas.draw_polygon :- It use for draw polygon with multiple points. ( It connec
 
 
 # def draw_handler(canvas):
-#     canvas.draw_polygon([(50, 100), (42, 446), (678, 800), (200, 250)], 5, "Red")
+#     canvas.draw_polygon([(50, 100), (42, 446), (346, 467), (200, 250)], 5, "Red", "Green")
 
 
 # frame = simple.create_frame("ConntectLine Frame", 500, 500, 200)
