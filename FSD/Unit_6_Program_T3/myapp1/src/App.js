@@ -7,6 +7,8 @@ import Event1 from "./component/Events1";
 import Map1 from "./component/Map1";
 import Map2 from "./component/Map2";
 import Pra2 from "./component/Pra2";
+import List1 from "./component/List";
+import Filter1 from "./component/Filter";
 // import Pra1 from "./component/Pra1";
 
 function App() {
@@ -34,7 +36,12 @@ function App() {
           <tr>
             <td>Lec 3</td>
             <td>21-07-23</td>
-            <td>Event,Map,Pra2</td>
+            <td>Event/Map/Pra2</td>
+          </tr>
+          <tr>
+            <td>Lec 4</td>
+            <td>24-07-23</td>
+            <td>List/Filter</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -76,6 +83,15 @@ function App() {
         <div>
           <Map2 />
         </div>
+        {/* --------------------- */}
+        <div>
+          <List1 />
+        </div>
+        {/* --------------------- */}
+        <div>
+            <Filter1 />
+        </div>
+        {/* --------------------- */}
       </header>
     </div>
   );

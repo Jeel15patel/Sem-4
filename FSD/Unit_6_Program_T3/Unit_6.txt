@@ -10,4 +10,12 @@ props :-
     props pass as object
 
 Maps :- 
-    In React Map method is use to 
+    Maps is a function that take a array and return a new array
+    Maps is use to iterate over a array and return a new array
+    Key :- 
+        Key is spiceal attridut you need to when you create list of element in react 
+        Key are user in react to identefire which item is change , add or remove
+
+Filter :- 
+    Filter loop 
+    
