@@ -18,4 +18,5 @@ Maps :-
 
 Filter :- 
     Filter loop 
-    
+    Filter is a function that take a array and return a new array
+
