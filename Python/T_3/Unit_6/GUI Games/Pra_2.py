@@ -1,5 +1,8 @@
 import SimpleGUICS2Pygame.simpleguics2pygame as simple
 
+num1 = 0
+num2 = 0
+ans = 0
 
 def InputHandlerNum1(inp):
     global num1
@@ -34,10 +37,6 @@ def div():
 def draw_handler(canvas):
     canvas.draw_text(str(ans), (250, 250), 50,"Red")
 
-
-num1 = 0
-num2 = 0
-ans = 0
 
 frames = simple.create_frame("Calculator Pra_2", 500, 500, 200)
 frames.add_input("Enter a Number 1 ", InputHandlerNum1, 100)
