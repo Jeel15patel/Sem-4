@@ -192,37 +192,37 @@ frame.add_label :- It use for add lable in frame.
 # --------------------------------------------------------
 # Screen Svaer
 
-y = 0
-message = "Hello World"
+# y = 0
+# message = "Hello World"
 
 
-def timer_handler():
-    global y
-    y += 10
-    if y == 500:
-        y = 0
+# def timer_handler():
+#     global y
+#     y += 10
+#     if y == 500:
+#         y = 0
 
 
-def draw_handler(canvas):
-    global y
-    canvas.draw_text(message, (50, y), 30, "Red")
+# def draw_handler(canvas):
+#     global y
+#     canvas.draw_text(message, (50, y), 30, "Red")
 
 
-def start():
-    timers.start()
+# def start():
+#     timers.start()
 
 
-def stop():
-    timers.stop()
+# def stop():
+#     timers.stop()
 
 
-timers = simple.create_timer(1000, timer_handler)
-frame = simple.create_frame("Hello and Goodbye", 500, 500)
-button1 = frame.add_button("Start", start, 100)
-button2 = frame.add_button("Stop", stop, 100)
-frame.set_draw_handler(draw_handler)
-timers.start()
-frame.start()
+# timers = simple.create_timer(1000, timer_handler)
+# frame = simple.create_frame("Hello and Goodbye", 500, 500)
+# button1 = frame.add_button("Start", start, 100)
+# button2 = frame.add_button("Stop", stop, 100)
+# frame.set_draw_handler(draw_handler)
+# timers.start()
+# frame.start()
 
 # --------------------------------------------------------
 
