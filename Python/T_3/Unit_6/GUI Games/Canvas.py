@@ -8,7 +8,7 @@ canvas.draw_text :- It use for Font size, Font color, Font style, Font position.
 frame.set_canvas_background :- It use for background color.
 canvas.draw_line :- It use for draw line.
 canvas.draw_polyline :- It use for draw line with multiple points.
-canvas.draw_polygon :- It use for draw polygon with multiple points. ( It connect the last point to first point)
+canvas.y :- It use for draw polygon with multiple points. ( It connect the last point to first point)
 canvas.draw_circle :- It use for draw circle with center point and radius.
 frame.add_label :- It use for add lable in frame.
 """
@@ -119,22 +119,110 @@ frame.add_label :- It use for add lable in frame.
 # --------------------------------------------------------
 
 
+# def timer_handler():
+#     print("Demo timer handler")
+
+
+# def start():
+#     frame.add_label("Start Times")
+#     timers.start()
+
+
+# def stop():
+#     frame.add_label("Stop Times")
+#     timers.stop()
+
+
+# timers = simple.create_timer(1000, timer_handler)
+# frame = simple.create_frame("Demo Frame", 500, 500, 200)
+# button1 = frame.add_button("Start", start, 100)
+# button2 = frame.add_button("Stop", stop, 100)
+# frame.start()
+
+# --------------------------------------------------------
+
+# message = "Hello World"
+
+# def click():
+#     global message
+#     message = "Goodbye World"
+
+# def draw_handler(canvas):
+#     canvas.draw_text(message, (50, 100), 36, "Red")
+
+# frame = simple.create_frame("Hello and Goodbye", 500, 200)
+# frame.add_button("Click me", click, 100)
+# frame.set_draw_handler(draw_handler)
+# frame.start()
+
+
+# --------------------------------------------------------
+
+# mycoloes = ['Violet','Indigo','Blue','Green','Yellow','Orange','Red']
+# t = 0
+
+
+# def timer_handler():
+#     global t
+#     t += 1
+#     if t == 7:
+#         t = 0
+
+# def start():
+#     timers.start()
+
+# def stop():
+#     timers.stop()
+
+# def draw_handler(canvas):
+#     frame.set_canvas_background(mycoloes[t])
+#     canvas.draw_text(mycoloes[t], (50, 50), 50, "Black")
+
+# timers = simple.create_timer(500, timer_handler)
+# frame = simple.create_frame("First Frame", 200, 200)
+# button1 = frame.add_button("Start", start, 100)
+# button2 = frame.add_button("Stop", stop, 100)
+# frame.set_draw_handler(draw_handler)
+# timers.start()
+# frame.start()
+
+# 185.00 B
+# 198.10 S
+
+# --------------------------------------------------------
+# Screen Svaer
+
+y = 0
+message = "Hello World"
+
+
 def timer_handler():
-    print("Demo timer handler")
+    global y
+    y += 10
+    if y == 500:
+        y = 0
+
+
+def draw_handler(canvas):
+    global y
+    canvas.draw_text(message, (50, y), 30, "Red")
 
 
 def start():
-    frame.add_label("Start Times")
     timers.start()
 
 
 def stop():
-    frame.add_label("Stop Times")
     timers.stop()
 
 
 timers = simple.create_timer(1000, timer_handler)
-frame = simple.create_frame("Demo Frame", 500, 500, 200)
+frame = simple.create_frame("Hello and Goodbye", 500, 500)
 button1 = frame.add_button("Start", start, 100)
 button2 = frame.add_button("Stop", stop, 100)
+frame.set_draw_handler(draw_handler)
+timers.start()
 frame.start()
+
+# --------------------------------------------------------
+
