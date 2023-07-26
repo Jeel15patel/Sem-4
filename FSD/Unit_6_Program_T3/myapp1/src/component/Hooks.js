@@ -6,8 +6,8 @@ function Us1() {
   }
   return (
     <>
-      <button onClick={xyz}>Click Me</button>
       <h1>You Click {name}</h1>
+      <button onClick={xyz}>Click Me</button>
     </>
   );
 }
