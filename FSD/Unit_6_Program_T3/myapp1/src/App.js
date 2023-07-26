@@ -14,6 +14,7 @@ import Pra3 from "./component/Pra3";
 import Pra4 from "./component/Pra4";
 import Pra5 from "./component/Pra5";
 import Pra6 from "./component/Pra6";
+import Pra7 from "./component/Pra7";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -52,7 +53,7 @@ function App() {
           <tr>
             <td>Lec 5</td>
             <td>26-07-23</td>
-            <td>Hooks/Pra3/Pra4/Pra5/Pra6</td>
+            <td>Hooks/Pra3/Pra4/Pra5/Pra6/Pra7</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -76,8 +77,8 @@ function App() {
         <h6>------------------------------</h6>
         {/* --------------------- */}
         {/* <div>
-            <Pra1 />
-            </div> */}
+						<Pra1 />
+						</div> */}
         {/* --------------------- */}
         <div>
           <Event />
@@ -115,8 +116,8 @@ function App() {
         <h6>------------------------------</h6>
         {/* --------------------- */}
         {/* <div>
-          <Main />
-        </div> */}
+					<Main />
+				</div> */}
         {/* --------------------- */}
         <div>
           <Hooks1 />
@@ -143,6 +144,10 @@ function App() {
         </div>
         <h6>------------------------------</h6>
         {/* --------------------- */}
+        <div>
+          <Pra7 />
+        </div>
+        <h6>------------------------------</h6>
       </header>
     </div>
   );
