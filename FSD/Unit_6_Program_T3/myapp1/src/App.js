@@ -10,6 +10,7 @@ import Pra2 from "./component/Pra2";
 import List1 from "./component/List";
 import Filter1 from "./component/Filter";
 import Hooks1 from "./component/Hooks";
+import Pra3 from "./component/Pra3";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -48,7 +49,7 @@ function App() {
           <tr>
             <td>Lec 5</td>
             <td>26-07-23</td>
-            <td>Hooks/</td>
+            <td>Hooks/Prac3/</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -106,6 +107,11 @@ function App() {
         <div>
           <Hooks1 />
         </div>
+        {/* --------------------- */}
+        <div>
+          <Pra3 />
+        </div>
+        {/* --------------------- */}
       </header>
     </div>
   );
