@@ -22,6 +22,9 @@ Lect 4 :- 25/7/2023 :-
     :- Draw Pointer
     :- Draw Image    
 
+Lect 5 :- 27/7/2023 :-
+    :- 
+    
 -----------------------------------------------------
 
 import SimpleGUICS2Pygame as simp
