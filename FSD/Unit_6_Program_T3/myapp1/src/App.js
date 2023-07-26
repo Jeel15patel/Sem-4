@@ -52,7 +52,7 @@ function App() {
           <tr>
             <td>Lec 5</td>
             <td>26-07-23</td>
-            <td>Hooks/Pra3/Pra4/Pra5</td>
+            <td>Hooks/Pra3/Pra4/Pra5/Pra6</td>
           </tr>
         </table>
         {/* --------------------- */}
