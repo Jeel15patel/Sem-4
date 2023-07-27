@@ -24,6 +24,8 @@ Lect 4 :- 25/7/2023 :-
 
 Lect 5 :- 27/7/2023 :-
     :- Draw Image
+    :- Screen Saver
+    :- Number Guessing With GUI 
     :- 
     
 -----------------------------------------------------
