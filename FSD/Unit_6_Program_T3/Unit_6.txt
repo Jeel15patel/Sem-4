@@ -34,3 +34,5 @@ useRreduce :
         despach is a function that take a action object and send it to the reducer
         despach is use to send action to the reducer
     
+
+useEffect :-
