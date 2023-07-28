@@ -55,6 +55,11 @@ function App() {
             <td>26-07-23</td>
             <td>Hooks/Pra3/Pra4/Pra5/Pra6/Pra7</td>
           </tr>
+          <tr>
+            <td>Lec 6</td>
+            <td>28-07-23</td>
+            <td>---</td>
+          </tr>
         </table>
         {/* --------------------- */}
         <ul>
