@@ -20,3 +20,17 @@ Filter :-
     Filter loop 
     Filter is a function that take a array and return a new array
 
+useRreduce :
+    useReduce is a function that take a array and return a single value
+    useReduce is use to iterate over a array and return a single value 
+
+    action object :-
+        action is a object that contain two property 
+        1. type 
+        2. payload
+        action is use to change the state of the application
+
+    despach :-
+        despach is a function that take a action object and send it to the reducer
+        despach is use to send action to the reducer
+    
