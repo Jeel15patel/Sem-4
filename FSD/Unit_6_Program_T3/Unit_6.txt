@@ -36,3 +36,11 @@ useRreduce :
     
 
 useEffect :-
+    useEffect is a function that take a function and run it after
+    useEffect is use to run side effect in a function component
+
+useContext :- 
+    useContext is a function that take a context object and return a value
+    useContext is use to get the value from the context object
+
+        

@@ -20,6 +20,7 @@ import Pra8 from "./component/Pra8";
 import Pra9 from "./component/Pra9";
 import Pra10 from "./component/Pra10";
 import Pra11 from "./component/Pra11";
+import UseContext1 from "./usecontext/PC";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -186,6 +187,11 @@ function App() {
         {/* --------------------- */}
         <div>
           <Pra11 />
+        </div>
+        <h6>------------------------------</h6>
+        {/* --------------------- */}
+        <div>
+          <UseContext1 />
         </div>
         <h6>------------------------------</h6>
         {/* --------------------- */}
