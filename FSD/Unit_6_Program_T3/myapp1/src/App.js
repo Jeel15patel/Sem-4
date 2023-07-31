@@ -19,6 +19,7 @@ import Reduces from "./component/UseReduces";
 import Pra8 from "./component/Pra8";
 import Pra9 from "./component/Pra9";
 import Pra10 from "./component/Pra10";
+import Pra11 from "./component/Pra11";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -63,6 +64,11 @@ function App() {
             <td>Lec 6</td>
             <td>28-07-23</td>
             <td>useReducer/useEffect/Pra8/Pra9/Pra10</td>
+          </tr>
+          <tr>
+            <td>Lec 7</td>
+            <td>31-07-23</td>
+            <td>Pra11/</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -175,6 +181,11 @@ function App() {
         {/* --------------------- */}
         <div>
           <Pra10 />
+        </div>
+        <h6>------------------------------</h6>
+        {/* --------------------- */}
+        <div>
+          <Pra11 />
         </div>
         <h6>------------------------------</h6>
         {/* --------------------- */}

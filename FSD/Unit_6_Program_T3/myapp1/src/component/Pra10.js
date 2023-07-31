@@ -8,24 +8,34 @@ import React, { useEffect, useState } from "react";
 
 const Us1 = () => {
 
-    const [count, setCount] = useState(0);
-    const [calculation, setCalculation] = useState(0);
+    const[count,setCount]=useState(0)
+    const[calculator,setCal]=useState(0)
 
-    useEffect(() => {
-        alert("Clicked");
-    }, []);
+    useEffect(()=>{alert("Clicked.")},[count]);
 
-    return (
-    <>
-        <button onClick={() => { setCount(count + 1);}}> 
-            Count {count} 
-        </button>
-        <br></br>
-        <button onClick={() => { setCalculation(calculation + 1);}}>
-            Calculate {calculation}
-        </button>
-    </>
-    );
+    const changeCount=()=>{
+        setCount(count+1)
+    };
+    const changeCalc=()=>{
+        setCal(calculator+1)
+    };
+
+
+    return(
+        <>
+        <button onClick={changeCount}>Button A {count}</button><br></br>
+        <button onClick={changeCalc}>Button B {calculator}</button>
+        </>
+    )
 };
 
 export default Us1;
+
+
+// function UE1(){
+
+    
+
+// }
+
+// export default UE1
