@@ -21,6 +21,7 @@ import Pra9 from "./component/Pra9";
 import Pra10 from "./component/Pra10";
 import Pra11 from "./component/Pra11";
 import UseContext1 from "./usecontext/PC";
+import Calculator from "./calculator/Calculator";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -69,7 +70,7 @@ function App() {
           <tr>
             <td>Lec 7</td>
             <td>31-07-23</td>
-            <td>Pra11/</td>
+            <td>Pra11/usecontext/calculator/</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -192,6 +193,11 @@ function App() {
         {/* --------------------- */}
         <div>
           <UseContext1 />
+        </div>
+        <h6>------------------------------</h6>
+        {/* --------------------- */}
+        <div>
+          <Calculator />
         </div>
         <h6>------------------------------</h6>
         {/* --------------------- */}
