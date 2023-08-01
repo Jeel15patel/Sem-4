@@ -26,8 +26,10 @@ Lect 5 :- 27/7/2023 :-
     :- Draw Image
     :- Screen Saver
     :- Number Guessing With GUI 
-    :- 
     
+Lect 6 :- 1/8/2023 :-
+    :- Reaction_Time
+    :- 
 -----------------------------------------------------
 
 import SimpleGUICS2Pygame as simp
