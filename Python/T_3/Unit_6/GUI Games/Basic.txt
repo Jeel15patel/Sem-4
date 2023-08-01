@@ -29,7 +29,8 @@ Lect 5 :- 27/7/2023 :-
     
 Lect 6 :- 1/8/2023 :-
     :- Reaction_Time
-    :- 
+    :- Keyboard Handler
+    :- Shape Shifting
 -----------------------------------------------------
 
 import SimpleGUICS2Pygame as simp
