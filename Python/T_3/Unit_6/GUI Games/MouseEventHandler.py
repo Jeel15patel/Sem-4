@@ -19,20 +19,22 @@ height = 300
 radius = 20
 ball_pos = [width/2, height/2]
 
-def draw(canvas):
+def DrawHandler(canvas):
     canvas.draw_circle(ball_pos, radius, 2, 'red', 'white')
 
-def mousemove(pos):
+def ClickMouse(pos):
+    global ball_pos
+    ball_pos = list(pos)
+    
+def MoveMouse(pos):
     global ball_pos
     ball_pos = list(pos)
 
-def click(pos):
-    global ball_pos
-    ball_pos = list(pos)
+
 
 frame = Simple.create_frame("HII", width, height)
-frame.set_draw_handler(draw)
-frame.set_mouseclick_handler(click)
-frame.set_mousedrag_handler(mousemove)
+frame.set_draw_handler(DrawHandler)
+frame.set_mouseclick_handler(ClickMouse)
+frame.set_mousedrag_handler(MoveMouse)
 frame.start()
 
