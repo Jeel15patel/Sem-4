@@ -1,5 +1,7 @@
 // WAP to form with Username ,age ,email ,password ,confirm password when user click on submit button then show all data in alert box with
 // Username ,age ,email ,password ,confirm password
+// Email have proper validation
+// password have more than 8 character and First letter is capital and one special character and one number is required
 
 import React, { useState } from "react";
 
@@ -12,6 +14,20 @@ function Pra12() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const emailRegex = /^[a-zA-Z0-9+_.-]+@gmail.com+$/;
+    const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+
+    if (!emailRegex.test(Email)) {
+      alert("Email is Wrong");
+      return;
+    }
+
+    if (!passwordRegex.test(Password)) {
+      alert("Password is Wrong");
+      return;
+    }
+
     if (Password === ConfirmPassword) {
       alert(`UserName: ${UserName} // Age: ${Age} // Email: ${Email}`);
     } else {
