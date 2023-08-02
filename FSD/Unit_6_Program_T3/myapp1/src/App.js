@@ -23,6 +23,7 @@ import Pra11 from "./component/Pra11";
 import UseContext1 from "./usecontext/PC";
 import Calculator from "./calculator/Calculator";
 import FormsPra from "./component/ReactForm";
+import FormsPra2 from "./component/FormPra2";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -76,7 +77,7 @@ function App() {
           <tr>
             <td>Lec 8</td>
             <td>2-08-23</td>
-            <td>FormsPra/</td>
+            <td>FormsPra/FormsPra2/FormsPra3</td>
           </tr>
         </table>
         {/* --------------------- */}
@@ -209,6 +210,11 @@ function App() {
         {/* --------------------- */}
         <div>
           <FormsPra />
+        </div>
+        <h6>------------------------------</h6>
+        {/* --------------------- */}
+        <div>
+          <FormsPra2 />
         </div>
         <h6>------------------------------</h6>
         {/* --------------------- */}
