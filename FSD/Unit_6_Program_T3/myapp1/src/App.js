@@ -24,6 +24,7 @@ import UseContext1 from "./usecontext/PC";
 import Calculator from "./calculator/Calculator";
 import FormsPra from "./component/ReactForm";
 import FormsPra2 from "./component/FormPra2";
+import FormsPra3 from "./component/FormPra3";
 // import Main from "./router/Main";
 // import Pra1 from "./component/Pra1";
 
@@ -215,6 +216,11 @@ function App() {
         {/* --------------------- */}
         <div>
           <FormsPra2 />
+        </div>
+        <h6>------------------------------</h6>
+        {/* --------------------- */}
+        <div>
+          <FormsPra3 />
         </div>
         <h6>------------------------------</h6>
         {/* --------------------- */}
