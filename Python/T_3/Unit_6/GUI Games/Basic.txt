@@ -35,6 +35,10 @@ Lect 6 :- 1/8/2023 :-
     :- Ball Control with Velocity
     :- Mouse Control 
 
+Lect 7 :- 3/8/2023 :-
+    :- Drawing Line Using Mouse Clicks
+    
+
 -----------------------------------------------------
 
 import SimpleGUICS2Pygame as simp
