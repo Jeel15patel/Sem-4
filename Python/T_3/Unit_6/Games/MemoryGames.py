@@ -11,8 +11,8 @@ def new_game():
     deck = [x for x in range(8)] * 2
     random.shuffle(deck)
     exposed = [False] * 16
-    sound = simplegui._load_local_sound("flipcard-91468.ogg")
-    soundWin = simplegui._load_local_sound("crowd-cheer-ii-6263.ogg")
+    sound = simplegui._load_local_sound("Sound\door-open-sound-effect-94368.ogg")
+    soundWin = simplegui._load_local_sound("Sound\gunshot-37055.ogg")
 
 
 # define event handlers
