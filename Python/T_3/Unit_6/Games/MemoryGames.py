@@ -13,6 +13,7 @@ def new_game():
     exposed = [False] * 16
     sound = simplegui._load_local_sound("Sound\door-open-sound-effect-94368.ogg")
     soundWin = simplegui._load_local_sound("Sound\gunshot-37055.ogg")
+    # print(deck)
 
 
 # define event handlers
