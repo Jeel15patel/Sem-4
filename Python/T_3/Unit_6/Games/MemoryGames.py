@@ -6,17 +6,19 @@ import random
 
 # helper function to initialize globals
 def new_game():
-    global deck, exposed, state, cIndex1, cIndex2, nScore, nMoves
+    global deck, exposed, state, cIndex1, cIndex2, nScore, nMoves, sound, soundWin
     state, nScore, nMoves, cIndex1, cIndex2 = 0, 0, 0, -1, -1
     deck = [x for x in range(8)] * 2
     random.shuffle(deck)
     exposed = [False] * 16
+    sound = simplegui._load_local_sound("flipcard-91468.ogg")
+    soundWin = simplegui._load_local_sound("crowd-cheer-ii-6263.ogg")
 
 
 # define event handlers
 def mouseclick(pos):
     # add game state logic here
-    global state, nScore, cIndex1, cIndex2, nMoves
+    global state, nScore, cIndex1, cIndex2, nMoves, sound, soundWin
     cardIndex = list(pos)[0] // 50
     if not exposed[cardIndex]:
         if state == 0:  # just started
@@ -34,9 +36,11 @@ def mouseclick(pos):
         else:  # two cards flipped
             if deck[cIndex1] != deck[cIndex2]:
                 exposed[cIndex1], exposed[cIndex2] = False, False
+                cIndex1, cIndex2 = -1, -1
             cIndex1 = cardIndex
             exposed[cardIndex] = True
             state = 1
+    sound.play()
 
 
 # cards are logically 50x100 pixels in size
@@ -57,12 +61,17 @@ def draw(canvas):
                 "Red",
                 "Green",
             )
+    label.set_text("Turns = " + str(nMoves))
+    label2.set_text("Score = " + str(nScore))
+    if nScore == 8:
+        soundWin.play()
 
 
 # create frame and add a button and labels
 frame = simplegui.create_frame("Memory", 800, 100)
 frame.add_button("Reset", new_game)
 label = frame.add_label("Turns = 0")
+label2 = frame.add_label("Score = 0")
 
 # register event handlers
 frame.set_mouseclick_handler(mouseclick)
