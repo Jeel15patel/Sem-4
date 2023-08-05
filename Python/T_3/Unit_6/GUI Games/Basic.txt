@@ -37,6 +37,12 @@ Lect 6 :- 1/8/2023 :-
 
 Lect 7 :- 3/8/2023 :-
     :- Drawing Line Using Mouse Clicks
+    :- Drawing Line Using Mouse Drag
+    :- Add Sound to Game
+
+Lect 8 :- 5/8/2023 :-
+    :- Tic Tac Toe Game
+    :- Memory Game
     
 
 -----------------------------------------------------
