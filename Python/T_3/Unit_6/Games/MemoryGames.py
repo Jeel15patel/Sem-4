@@ -1,4 +1,4 @@
-# # implementation of card game - Memory
+# implementation of card game - Memory
 
 import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
 import random
