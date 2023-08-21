@@ -1,7 +1,7 @@
-# Sem-4
+# Sem-4 
 
-# College name: L. J. University, Ahmedabad.
+## I am a student at LJ University, Ahmedabad.
 
-# This repository contains college lectures on [Python] and [FSD (full stack developer)]].
+## This repository contains college lectures on [Python] and [FSD (full stack developer)]].
 
-# If you find any error in any code, please inform me at 15jeel6201patel@gmail.com.
+## If you find any error in any code, please inform me at 15jeel6201patel@gmail.com.
