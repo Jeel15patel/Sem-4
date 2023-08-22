@@ -1,7 +1,9 @@
 Lecture No : 1
 Lecture Date : 22-08-2023
-Lecture Contain :  
-                :
+Lecture Contain : What is Django 
+                : What Django Framework
+                : Django Architecture
+                : 
 ----------------------------
 
 Lecture No : 2
