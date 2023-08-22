@@ -1,5 +1,5 @@
 Lecture No : 1
-Lecture Date : 22-08-2023
+Lecture Date : 21-08-2023
 Lecture Contain : Install Mogodb  
                 : Create Database
                 : Create Collection
@@ -10,7 +10,7 @@ Lecture Contain : Install Mogodb
 ----------------------------
 
 Lecture No : 2
-Lecture Date : -08-2023
+Lecture Date : 23-08-2023
 Lecture Contain : 
 
 ----------------------------
