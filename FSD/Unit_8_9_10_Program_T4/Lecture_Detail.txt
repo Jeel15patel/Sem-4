@@ -15,6 +15,7 @@ Lecture Contain : Delet Data
                 : (mydb) -> (employee)
                 : Logical Operator ($and/$or/$not/$nor)
                 : Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
+                : Tasks_1
 
 ----------------------------
 

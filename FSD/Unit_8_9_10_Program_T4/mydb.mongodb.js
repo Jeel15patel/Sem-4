@@ -68,7 +68,7 @@ use("mydb");
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
+// y ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
 
 // $eq :- Matches values that are equal to a specified value
 // db.employee.find(
@@ -111,4 +111,4 @@ use("mydb");
 // );
 
 
-// db.employee.find();
+db.employee.find();
