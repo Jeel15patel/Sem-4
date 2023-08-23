@@ -45,4 +45,20 @@ use("Tasks");
 //     { Age: { $nin: [25, 30] } },
 // );
 
+// -------------------------------------------------------------------
+
+// Fields Operator [ $inc / $mul / $rename / $set / $unset ]
+
+// $inc :- Increment the value of the field by the specified amount.
+// db.people.updateOne(
+//     { Name: "P1" }, { $inc: { Age: 1 } },
+// );
+
+// $mul :- Multiply the value of the field by the specified amount.
+// db.people.updateOne(
+//     { Name: "P1" }, { $mul: { Age: 20 } },
+// );
+
+
+
 db.people.find()

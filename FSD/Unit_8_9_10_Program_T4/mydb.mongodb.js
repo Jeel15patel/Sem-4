@@ -110,5 +110,4 @@ use("mydb");
 //     { Salary: { $nin: [500, 700] } },
 // );
 
-
 db.employee.find();

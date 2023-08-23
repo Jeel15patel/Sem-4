@@ -13,9 +13,10 @@ Lecture No : 2
 Lecture Date : 23-08-2023
 Lecture Contain : Delet Data
                 : (mydb) -> (employee)
-                : Logical Operator ($and/$or/$not/$nor)
-                : Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
+                : Logical Operator [ $and / $or / $not / $nor ]
+                : Comparison Operator [ $eq / $gt / $gte / $in / $lt / $lte / $ne / $nin ]
                 : Tasks_1
+                : Fields Operator [ $inc / $mul / $rename / $set / $unset ]
 
 ----------------------------
 
@@ -44,13 +45,13 @@ Lecture Contain :
 ----------------------------
 
 
--> Logical Operator ($and/$or/$not/$nor)
+-> Logical Operator [ $and / $or / $not / $nor ]
     : $and: Returns documents where both queries match
     : $or: Returns documents where either query matches
     : $nor: Returns documents where both queries fail to match
     : $not: Returns documents where the query does not match
 
--> Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
+-> Comparison Operator [ $eq / $gt / $gte / $in / $lt / $lte / $ne / $nin ]
     : $eq: Matches values that are equal to a specified value
     : $gt: Matches values that are greater than a specified value
     : $gte: Matches values that are greater than or equal to a specified value
@@ -60,3 +61,9 @@ Lecture Contain :
     : $ne: Matches all values that are not equal to a specified value
     : $nin: Matches none of the values specified in an array
 
+-> Fields Operator [ $inc / $mul / $rename / $set / $unset ]
+    : $inc: Increments the value of the field by the specified amount
+    : $mul: Multiplies the value of the field by the specified amount
+    : $rename: Renames a field
+    : $set: Sets the value of a field in a document
+    : $unset: Removes the specified field from a document
