@@ -66,6 +66,49 @@ use("mydb");
 //     { $nor: [{ Name: "A2" }] }
 // );
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
+
+// $eq :- Matches values that are equal to a specified value
+// db.employee.find(
+//     { Salary: { $eq: 500 } },
+// );
+
+// $gt :- Matches values that are greater than a specified value
+// db.employee.find(
+//     { Salary: { $gt: 500 } },
+// );
+
+// $$lt :- Matches values that are less than a specified value
+// db.employee.find(
+//     { Salary: { $lt: 500 } },
+// );
+
+// $gte :- Matches values that are greater than or equal to a specified value
+// db.employee.find(
+//     { Salary: { $gte: 500 } },
+// );
+
+// $lte :- Matches values that are less than or equal to a specified value
+// db.employee.find(
+//     { Salary: { $lte: 500 } },
+// );
+
+// $in :- Matches any of the values specified in an array
+// db.employee.find(
+//     { Salary: { $in: [500, 700] } },
+// );
+
+// $ne :- Matches all values that are not equal to a specified value
+// db.employee.find(
+//     { Salary: { $ne: 500 } },
+// );
+
+// $nin :- Matches none of the values specified in an array
+// db.employee.find(
+//     { Salary: { $nin: [500, 700] } },
+// );
 
 
 // db.employee.find();

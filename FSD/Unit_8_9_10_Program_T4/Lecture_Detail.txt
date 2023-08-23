@@ -14,6 +14,7 @@ Lecture Date : 23-08-2023
 Lecture Contain : Delet Data
                 : (mydb) -> (employee)
                 : Logical Operator ($and/$or/$not/$nor)
+                : Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
 
 ----------------------------
 
@@ -47,3 +48,14 @@ Lecture Contain :
     : $or: Returns documents where either query matches
     : $nor: Returns documents where both queries fail to match
     : $not: Returns documents where the query does not match
+
+-> Comparison Operator ($eq/$gt/$gte/$in/$lt/$lte/$ne/$nin)
+    : $eq: Matches values that are equal to a specified value
+    : $gt: Matches values that are greater than a specified value
+    : $gte: Matches values that are greater than or equal to a specified value
+    : $in: Matches any of the values specified in an array
+    : $lt: Matches values that are less than a specified value
+    : $lte: Matches values that are less than or equal to a specified value
+    : $ne: Matches all values that are not equal to a specified value
+    : $nin: Matches none of the values specified in an array
+
