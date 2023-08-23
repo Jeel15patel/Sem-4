@@ -59,6 +59,9 @@ use("Tasks");
 //     { Name: "P1" }, { $mul: { Age: 20 } },
 // );
 
-
+// $rename :- Renames a field.
+// db.people.updateOne(
+//     { Name: "P1" }, { $rename: { Age: "Age1" } },
+// );
 
 db.people.find()
