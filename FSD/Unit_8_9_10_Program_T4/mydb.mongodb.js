@@ -38,4 +38,34 @@ use("mydb");
 //     {"Name":"A5","Salary":700}
 // ])
 
-db.employee.find();
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Logical Operator ($and/$or/$not/$nor)
+
+// $and :-------------------
+// db.employee.find(
+//     { $and: [{ "Name": "A1" }, { "Salary": 500 }] }
+// );
+
+// $or :-------------------
+// db.employee.find(
+//     { $or: [{ Name: "A1" }, { Salary: 500 }] }
+// );
+
+// $not :-------------------
+// db.employee.find(
+//     { Salary: { $not: { $lt: 600 } } }
+// );
+
+// db.employee.find(
+//     { Salary: { $not: { $gt: 500 } } }
+// );
+
+// $nor :-------------------
+// db.employee.find(
+//     { $nor: [{ Name: "A2" }] }
+// );
+
+
+
+// db.employee.find();

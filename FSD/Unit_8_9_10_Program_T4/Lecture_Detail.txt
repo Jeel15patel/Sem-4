@@ -13,7 +13,7 @@ Lecture No : 2
 Lecture Date : 23-08-2023
 Lecture Contain : Delet Data
                 : (mydb) -> (employee)
-                : 
+                : Logical Operator ($and/$or/$not/$nor)
 
 ----------------------------
 
@@ -40,3 +40,10 @@ Lecture Date : -08-2023
 Lecture Contain :  
 
 ----------------------------
+
+
+-> Logical Operator ($and/$or/$not/$nor)
+    : $and: Returns documents where both queries match
+    : $or: Returns documents where either query matches
+    : $nor: Returns documents where both queries fail to match
+    : $not: Returns documents where the query does not match
