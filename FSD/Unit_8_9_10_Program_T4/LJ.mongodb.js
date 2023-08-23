@@ -34,4 +34,6 @@ use("LJ");
 
 // db.employee.find({ E_Name: "Jeel" });
 
+// db.employee.deleteOne({"E_Name":"N1"})
+
 db.employee.find();
