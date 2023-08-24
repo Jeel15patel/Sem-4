@@ -10,5 +10,14 @@
         {% endfor %}
     </div>
 
+    <form action="">
+        <label>Search for Movies</label>
+        <input type="text" name="searchmovies" placeholder="Search for Movies">
+        <button type="submit" >Search</button>
+    </form>
+
+    <p>
+        Search for : {{ searchmovies }}
+    </p>
 
 {% endblock %}

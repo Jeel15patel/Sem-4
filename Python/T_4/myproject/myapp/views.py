@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Movies
 
 # Create your views here.
 
@@ -16,7 +17,9 @@ rooms = [
 ]
 
 def home(request):
-    return render(request, "home.html", {"homes": homes})
+    searchhere = request.GET.get("searchmovies")
+    movies = Movies.objects.all()
+    return render(request, "home.html", {"homes": homes, "movies": movies, "searchhere": searchhere})
 
 def room(request):
     return render(request, "room.html", {"rooms": rooms})

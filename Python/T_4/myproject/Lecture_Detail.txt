@@ -3,13 +3,14 @@ Lecture Date : 22-08-2023
 Lecture Contain : What is Django 
                 : What Django Framework
                 : Django Architecture
-                : 
+                : Install Django
 ----------------------------
 
 Lecture No : 2
-Lecture Date : -08-2023
-Lecture Contain :
-                :
+Lecture Date : 24-08-2023
+Lecture Contain : Create new folder ( templates )
+                : Learn about models
+                : Create ( admin ) username & password
 
 ----------------------------
 
