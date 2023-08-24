@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+    <h1>Home Page</h1>
+    <div>
+        {% for home in homes %}
+        <h3> {{ home.id }} -- {{home.name}} </h3>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
