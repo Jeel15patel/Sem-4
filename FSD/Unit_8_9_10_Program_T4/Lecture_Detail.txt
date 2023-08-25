@@ -26,7 +26,10 @@ Lecture Contain : Fields Operator [ $rename / $set / $unset ]
                 : Create createCollection("people_1"); 
                 : Drop Table people_1.drop();
                 : count() -> count the number of documents in a collection 
+                : sort() -> sort the documents in ascending or descending order
                 : Mongodb Cursor
+                : Mongodb Regex
+                : New Table ( mydb ) -> ( ABC)
 
 ----------------------------
 

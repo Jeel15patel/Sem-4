@@ -122,3 +122,36 @@ use("mydb");
 
 // --------------------------------------------------------
 // --------------------------------------------------------
+
+// Mongodb Regex
+
+// db.ABC.insertOne({ "Name": "Deep Surti", "No": 11 });
+
+// db.ABC.insertMany([
+//   { Name: "RajPatel", No: 12 },
+//   { Name: "123Sanket", No: 13 },
+//   { Name: "arsh789", No: 14 },
+//   { Name: "drshanzaladarshan", No: 15 },
+//   { Name: "567", No: 16 },
+//   { Name: "XYZa", No: 17 },
+// ]);
+
+// db.ABC.insertOne({ "Name": "12 345", "No": 18 });
+
+// db.ABC.find({ Name: { $regex: /patel/i } });
+
+// db.ABC.find({ Name: { $regex: /^arsh/i } });
+
+// db.ABC.find({ Name: { $regex: /^d/i } });
+
+// db.ABC.find({ Name: { $regex: /darshan$/ } });
+
+// db.ABC.find({ Name: { $regex: /[0-9]$/ } });
+
+// db.ABC.find({ Name: { $regex: /^[0-9]/ } });
+
+// db.ABC.find({ Name: { $regex: "^[0-9]+$" } });
+
+
+
+// db.ABC.find();
