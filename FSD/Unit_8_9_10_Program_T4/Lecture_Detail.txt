@@ -16,13 +16,16 @@ Lecture Contain : Delet Data
                 : Logical Operator [ $and / $or / $not / $nor ]
                 : Comparison Operator [ $eq / $gt / $gte / $in / $lt / $lte / $ne / $nin ]
                 : Tasks_1
-                : Fields Operator [ $inc / $mul / $rename / $set / $unset ]
+                : Fields Operator [ $inc / $mul ]
 
 ----------------------------
 
 Lecture No : 3
-Lecture Date : -08-2023
-Lecture Contain : 
+Lecture Date : 25-08-2023
+Lecture Contain : Fields Operator [ $rename / $set / $unset ]
+                : Create createCollection("people_1"); 
+                : Drop Table people_1.drop();
+                : count() -> count the number of documents in a collection 
 
 ----------------------------
 

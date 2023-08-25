@@ -51,17 +51,31 @@ use("Tasks");
 
 // $inc :- Increment the value of the field by the specified amount.
 // db.people.updateOne(
-//     { Name: "P1" }, { $inc: { Age: 1 } },
+//     { Name: "P1" }, { $inc: { Age: 15 } },
 // );
 
 // $mul :- Multiply the value of the field by the specified amount.
 // db.people.updateOne(
-//     { Name: "P1" }, { $mul: { Age: 20 } },
+//     { Name: "P2" }, { $mul: { Age: 20 } },
+// );
+
+// $unset :- Removes the specified field from a document.
+// db.people.updateOne(
+//   { Age: { $eq: 30 } },
+//   { $unset: { Branch: "CSE", Age: 30 } }
 // );
 
 // $rename :- Renames a field.
-// db.people.updateOne(
-//     { Name: "P1" }, { $rename: { Age: "Age1" } },
+// db.people.updateMany(
+//     {},{$rename: { Name: "Full_Name" } },
 // );
 
-db.people.find()
+// db.people.updateMany(
+//     {},{$rename: { Branch: "Branch_Name" , Age: "Age_of_Person" } },
+// );
+
+// db.people.count({"Full_Name": "P1"});
+
+db.people.find({ Full_Name: "P1" }).count();
+
+db.people.find();
