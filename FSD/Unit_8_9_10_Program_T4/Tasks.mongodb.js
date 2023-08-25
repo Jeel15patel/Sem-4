@@ -76,6 +76,22 @@ use("Tasks");
 
 // db.people.count({"Full_Name": "P1"});
 
-db.people.find({ Full_Name: "P1" }).count();
+// db.people.find({ Full_Name: "P1" }).count();
 
-db.people.find();
+// db.people.find().sort({ Age_of_Person: 1 });
+
+// db.people.find().sort({ Age_of_Person: -1 });
+
+let x = db.people.find();
+x
+
+
+
+// --------------------------------------------------------
+// --------------------------------------------------------
+
+// Task_8 : Add one fild joint_date = 2021-08-01
+// db.people.updateMany(
+//     {},{$set: { joint_date: "2021-08-01" } },
+// ); 
+
