@@ -18,6 +18,7 @@ const mySchema = new mg.Schema({
 });
 
 const person = new mg.model("Person", mySchema);
+
 // const personData = new person({
 //   Name: "Jeel",
 //   Surname: "Patel",
