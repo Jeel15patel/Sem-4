@@ -34,8 +34,11 @@ Lecture Contain : Fields Operator [ $rename / $set / $unset ]
 ----------------------------
 
 Lecture No : 4
-Lecture Date : -08-2023
-Lecture Contain :  
+Lecture Date : 28-08-2023
+Lecture Contain : Mongoose
+                : Install Mongoose
+                :
+
 
 ----------------------------
 

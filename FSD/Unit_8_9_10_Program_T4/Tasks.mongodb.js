@@ -94,4 +94,3 @@ x
 // db.people.updateMany(
 //     {},{$set: { joint_date: "2021-08-01" } },
 // ); 
-
