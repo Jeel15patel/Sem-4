@@ -16,3 +16,6 @@ const mySchema = new mg.Schema({
   Actve: Boolean,
   Date: { type: Date, default: Date.now },
 });
+
+const person = new mg.model("Person", mySchema);
+cons
