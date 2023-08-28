@@ -37,8 +37,11 @@ Lecture No : 4
 Lecture Date : 28-08-2023
 Lecture Contain : Mongoose
                 : Install Mongoose
+                : Connect Database
+                : Create Schema
+                : Create Model
+                : Insert Data 
                 :
-
 
 ----------------------------
 
