@@ -21,7 +21,7 @@ const person = new mg.model("Person", mySchema);
 
 const createDoc = async () => {
   try {
-    
+
     const personData1 = new person({
       Name: "Harsh",
       Surname: "Rathod",
@@ -57,13 +57,29 @@ const createDoc = async () => {
       Actve: true,
     });
 
-    const result = await person.insertMany([
-      personData1,
-      personData2,
-      personData3,
-      personData4,
-      personData5,
-    ]);
+
+    // Insert Qurey
+
+    // const result = await person.insertMany([
+    //   personData1,
+    //   personData2,
+    //   personData3,
+    //   personData4,
+    //   personData5,
+    // ]);
+
+    
+    // Find Qurey
+    // const result = await person.find({Surname: "Patel"}).limit(1)
+
+    // const result = await person.find({Surname: "Patel"}).select({Name: 0, Surname: 0})
+
+    // const result = await person.find({Age:{ $gt: 20}})
+
+    // const result = await person.find({Name: {$in: ["Harsh", "Krut"]}})
+
+    // const result = await person.deletMany({Name: "ABC"})
+
 
     console.log(result);
 

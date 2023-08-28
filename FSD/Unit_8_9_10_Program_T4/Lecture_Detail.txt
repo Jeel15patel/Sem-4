@@ -41,7 +41,8 @@ Lecture Contain : Mongoose
                 : Create Schema
                 : Create Model
                 : Insert Data 
-                :
+                : Find Data
+                : 
 
 ----------------------------
 
