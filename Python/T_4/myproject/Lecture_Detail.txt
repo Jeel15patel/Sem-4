@@ -16,16 +16,16 @@ Lecture Contain : Create new folder ( templates )
 
 Lecture No : 3
 Lecture Date : 26-08-2023
-Lecture Contain : 
-                : 
+Lecture Contain : Create Movies Rating Folder.
+                : Create Movie
+                : Create Movierating 
 
 ----------------------------
 
 Lecture No : 4
 Lecture Date : 29-08-2023
-Lecture Contain :  
-                :       
-
+Lecture Contain : We will to migrastion
+                : 
 ----------------------------
 
 Lecture No : 5
