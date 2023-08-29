@@ -25,6 +25,7 @@ Lecture Contain : Create Movies Rating Folder.
 Lecture No : 4
 Lecture Date : 29-08-2023
 Lecture Contain : We will to migrastion
+                : Add Movies Data in Backend
                 : 
 ----------------------------
 
