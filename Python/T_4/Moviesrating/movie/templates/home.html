@@ -22,19 +22,42 @@
       <button type="submit" class="btn btn-primary">Search</button>
     </form>
   </div>
-</body>
-searching for : {{ searchTerm }}
-<br />
-<br />
-<h2> Join our mailing list</h2>
-<form action="signup/">
-  <div class="mb-3">
-    <label class="form-label">Enter your e-mail: </label>
-    <input type="email" class="form-control" name="email">
+  searching for : {{ searchTerm }}
+  <br />
+  <br />
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for movie in movies %}
+    <div class="col">
+      <div class="card">
+        <img class="card-img-top" src="{{ movie.image.url }}" alt="{{ movie.title }}" />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description }}</p>
+
+          {% if movie.url %}
+          <a href="{{ movie.url }}" class="btn btn-primary">{{ movie.title }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
-  <button type="submit" class="btn btn-primary" name="signup">Signup</button>
-</form>
 
 
+
+  <br />
+  <br />
+  <h2> Join our mailing list</h2>
+  <form action="signup/">
+    <div class="mb-3">
+      <label class="form-label">Enter your e-mail: </label>
+      <input type="email" class="form-control" name="email">
+    </div>
+    <button type="submit" class="btn btn-primary" name="signup">Signup</button>
+  </form>
+
+
+</body>
 
 </html>
