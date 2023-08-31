@@ -32,13 +32,12 @@ Lecture Contain : We will to migrastion
 
 Lecture No : 5
 Lecture Date : 31-08-2023
-Lecture Contain :
-                :  
+Lecture Contain : Working in NEWS folder
 
 ----------------------------
 
 Lecture No : 6
-Lecture Date : -08-2023
+Lecture Date : 01-09-2023
 Lecture Contain :
                 :
 
