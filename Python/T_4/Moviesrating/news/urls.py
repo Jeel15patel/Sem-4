@@ -1,7 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-from movie import views
+from news import views
 
-urlpatterns = [
-    path("news/", views.news, name="news"),
-]
+urlpatterns = [path("", views.news, name="news")]
