@@ -1,62 +1,52 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
-<head>
-  <title>
-    Movies Rating App
-  </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <div class="'container">
-    <form action="">
-      <div class="mb-3">
-        <label class="form-label">Search for Movie </label>
-        <input type="text" class="form-control" name="searchMovie">
-      </div>
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-  </div>
-  searching for : {{ searchTerm }}
-  <br />
-  <br />
-
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% for movie in movies %}
-    <div class="col">
-      <div class="card">
-        <img class="card-img-top" src="{{ movie.image.url }}" alt="{{ movie.title }}" />
-        <div class="card-body">
-          <h5 class="card-title fw-bold">{{ movie.title }}</h5>
-          <p class="card-text">{{ movie.description }}</p>
-
-          {% if movie.url %}
-          <a href="{{ movie.url }}" class="btn btn-primary">{{ movie.title }}</a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-
-
-  <br />
-  <br />
-  <h2> Join our mailing list</h2>
-  <form action="signup/">
+{% block content %}
+<div class="'container">
+  <form action="">
     <div class="mb-3">
-      <label class="form-label">Enter your e-mail: </label>
-      <input type="email" class="form-control" name="email">
+      <label class="form-label">Search for Movie </label>
+      <input type="text" class="form-control" name="searchMovie">
     </div>
-    <button type="submit" class="btn btn-primary" name="signup">Signup</button>
+    <button type="submit" class="btn btn-primary">Search</button>
   </form>
+</div>
 
+
+searching for : {{ searchTerm }}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  {% for movie in movies %}
+  <div v-for="movie in movies" class="'col">
+    <div class="card">
+      <img class="card-img-top" src="{{movie.image.url}}" />
+      <div class="card-body">
+        <a href="{% url 'detail' movie.id %}">
+          <h2 class="card-title fw-bold">{{movie.title}}</h2>
+        </a>
+        <p class="'card-text"> {{movie.description}} </p>
+        {% if movie.url %}
+        <a href=" {{movie.url}}" class="'btn btn-primary"> Movie Link </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+
+<br /><br /><br /><br />
+<br />
+<h2> Join our mailing list</h2>
+<form action="signup/">
+  <div class="mb-3">
+    <label class="form-label">Enter your e-mail: </label>
+    <input type="email" class="form-control" name="email">
+  </div>
+  <button type="submit" class="btn btn-primary" name="signup">Signup</button>
+</form>
+
+
+{% endblock content %}
 
 </body>
 

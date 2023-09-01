@@ -38,7 +38,8 @@ Lecture Contain : Working in NEWS folder
 
 Lecture No : 6
 Lecture Date : 01-09-2023
-Lecture Contain :
-                :
+Lecture Contain : Add Logo in Navbar
+                : Create New detail.html file
+                : Add News Data in Backend
 
 ----------------------------

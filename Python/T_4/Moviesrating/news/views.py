@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from .models import new
+from django.http import HttpResponse
+from .models import News
 
-
+# Create your views here.
 def news(request):
-    news = new.objects.all().order_by("-date")
-    return render(request, "news.html", {"news": news})
+    newss = News.objects.all().order_by('-date')
+    return render(request,'news.html',{"news":newss})
