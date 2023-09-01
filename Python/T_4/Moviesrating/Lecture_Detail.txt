@@ -33,13 +33,16 @@ Lecture Contain : We will to migrastion
 Lecture No : 5
 Lecture Date : 31-08-2023
 Lecture Contain : Working in NEWS folder
+                : Add Logo in Navbar
+                : Add News Data in Backend
 
 ----------------------------
 
 Lecture No : 6
 Lecture Date : 01-09-2023
-Lecture Contain : Add Logo in Navbar
-                : Create New detail.html file
-                : Add News Data in Backend
+Lecture Contain : Create New detail.html file
+                : Creat New app account
+                : Add Login page
+                : 
 
 ----------------------------

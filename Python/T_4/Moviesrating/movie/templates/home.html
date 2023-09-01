@@ -17,7 +17,7 @@ searching for : {{ searchTerm }}
   {% for movie in movies %}
   <div v-for="movie in movies" class="'col">
     <div class="card">
-      <img class="card-img-top" src="{{movie.image.url}}" />
+      <img class="card-img-top" src="{{movie.image.url}}" height="700px" width="500px" />
       <div class="card-body">
         <a href="{% url 'detail' movie.id %}">
           <h2 class="card-title fw-bold">{{movie.title}}</h2>
