@@ -20,12 +20,10 @@ use("LJ");
 //   { $set: { Designation: "Senior Developer" } }
 // );
 
-
 // db.employee.updateOne(
 //   { E_Name: "Harsh" },
 //   { $set: { Designation: "Full Stack Developer" } }
 // );
-
 
 // db.employee.updateOne(
 //   { E_Name: "Jeel" },
@@ -36,4 +34,18 @@ use("LJ");
 
 // db.employee.deleteOne({"E_Name":"N1"})
 
-db.employee.find();
+// db.employee.find();
+
+// db.indexTable.insertOne({
+//   Name: "KKK",
+//   Age: 20,
+// });
+
+// db.indexTable.insertMany([
+//     {Name:"WWW",Age:12},
+//     {Name:"DDD",Age:2},
+// ])
+
+db.indexTable.find({Name:"KKK"}).explain("executionStats")
+
+// db.indexTable.find()
