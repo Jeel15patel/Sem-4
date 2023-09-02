@@ -46,6 +46,12 @@ use("LJ");
 //     {Name:"DDD",Age:2},
 // ])
 
-db.indexTable.find({Name:"KKK"}).explain("executionStats")
+// db.indexTable.find({Name:"KKK"}).explain("executionStats")
+
+// db.indexTable.createIndex({Age:1})
+
+// db.indexTable.getIndexes()
+
+
 
 // db.indexTable.find()

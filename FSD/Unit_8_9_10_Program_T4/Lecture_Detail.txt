@@ -51,7 +51,7 @@ Lecture Contain : Delete Data
                 : MultipleData
                 : Install Validator 
                 : Data conntion with HTML Form
-                :
+                : Learn working with index 
 
 ----------------------------
 
