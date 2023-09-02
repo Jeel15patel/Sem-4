@@ -42,13 +42,16 @@ Lecture Contain : Mongoose
                 : Create Model
                 : Insert Data 
                 : Find Data
-                : 
 
 ----------------------------
 
 Lecture No : 5
-Lecture Date : -08-2023
-Lecture Contain : 
+Lecture Date : 02-09-2023
+Lecture Contain : Delete Data
+                : MultipleData
+                : Install Validator 
+                :
+                :
 
 ----------------------------
 
