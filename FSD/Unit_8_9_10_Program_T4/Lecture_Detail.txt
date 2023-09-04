@@ -56,8 +56,9 @@ Lecture Contain : Delete Data
 ----------------------------
 
 Lecture No : 6
-Lecture Date : -08-2023
-Lecture Contain :  
+Lecture Date : 04-09-2023
+Lecture Contain : Learn and working with index 
+                : Data Reprication
 
 ----------------------------
 

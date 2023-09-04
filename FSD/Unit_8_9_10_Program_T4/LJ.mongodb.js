@@ -32,13 +32,15 @@ use("LJ");
 
 // db.employee.find({ E_Name: "Jeel" });
 
-// db.employee.deleteOne({"E_Name":"N1"})
+// db.employee.deleteOne({"E_Name":"N1"})̥
 
 // db.employee.find();
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // db.indexTable.insertOne({
 //   Name: "KKK",
-//   Age: 20,
+//   Age: 20,̥
 // });
 
 // db.indexTable.insertMany([
@@ -52,6 +54,8 @@ use("LJ");
 
 // db.indexTable.getIndexes()
 
+// db.indexTable.dropIndex("Age_1")
 
+db.indexTable.find({Age:{$lt:5}}).explain("executionStats")
 
 // db.indexTable.find()
