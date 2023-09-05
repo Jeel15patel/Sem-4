@@ -32,6 +32,14 @@
             <a class="nav-link" href="/news">News</a>
           </li>
           <li class="nav-item">
+            {% if user.is_authenticated %}
+            <a class="nav-link" href="#">Logout{{user.username}}</a>
+            {% else %}
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/accounts/signupcount">Sign up</a>
           </li>
         </ul>
