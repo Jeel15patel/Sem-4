@@ -43,6 +43,14 @@ Lecture Date : 01-09-2023
 Lecture Contain : Create New detail.html file
                 : Creat New app account
                 : Add Login page
-                : 
+
+----------------------------
+
+Lecture No : 7
+Lecture Date : 05-09-2023
+Lecture Contain : Add Singip Page
+                : Add New models
+                : Add Logout.
+                : Some other change
 
 ----------------------------
