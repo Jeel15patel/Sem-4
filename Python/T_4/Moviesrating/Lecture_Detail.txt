@@ -51,6 +51,7 @@ Lecture Date : 05-09-2023
 Lecture Contain : Add Singip Page
                 : Add New models
                 : Add Logout.
+                : Add Review
                 : Some other change
 
 ----------------------------

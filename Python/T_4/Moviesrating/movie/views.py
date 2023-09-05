@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from .models import Movie
+from .models import Movie, Review
 
 
 # Create your views here.
@@ -25,3 +25,24 @@ def signup(request):
 def detail(request, movie_id):
     movie = get_object_or_404(Movie, pk=movie_id)
     return render(request, "detail.html", {"movie": movie})
+
+
+def createreview(request, movie_id):
+    movie = get_object_or_404(Movie, pk=movie_id)
+    if request.method == "GET":
+        return render(request, "createreview.html", {"movie": movie})
+    else:
+        try:
+            myreview = request.POST.get("myreview")
+            newReview = Review()
+            newReview.user = request.user
+            newReview.movie = movie
+            newReview.text = myreview
+            newReview.save()
+            return redirect("detail", newReview.movie.id)
+        except ValueError:
+            return render(
+                request,
+                "createreview.html",
+                {"movie": movie, "error": "Bad data passed in. Try again."},
+            )
