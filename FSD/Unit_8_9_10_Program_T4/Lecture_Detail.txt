@@ -62,6 +62,13 @@ Lecture Contain : Learn and working with index
 
 ----------------------------
 
+Lecture No : 7
+Lecture Date : 06-09-2023
+Lecture Contain : Connect To React app in DataBase
+                : Git Learning
+                
+----------------------------
+
 
 -> Logical Operator [ $and / $or / $not / $nor ]
     : $and: Returns documents where both queries match
